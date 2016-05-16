@@ -1,0 +1,30 @@
+<div style='background-color:orange'>@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</div>
+<div>
+<h2>New Bug Comment</h2>
+
+<p>
+<label>Title:
+{{input value=model.title}}
+</label>
+</p>
+<p>
+<label>Bug Details:
+{{input value=model.bugDetails }}
+</label>
+</p>
+<p>
+<label>Created Date:
+{{input value=model.createdDate}}
+</label>
+</p>
+<p>
+
+</p>
+<button {{action "save"}}>Save</button>
+<!-- note that a submit will also work as well -->
+<!--input type="submit" value="Save"/ -->
+<button {{action "cancel"}}>Cancel</button>
+<button {{action "delete" model}}>Delete</button>
+
+</div>
+<div style='background-color:orange'>@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</div>

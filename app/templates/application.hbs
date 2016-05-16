@@ -1,3 +1,18 @@
-<h2 id="title">Welcome to Ember</h2>
+<div class="jumbotron">
+      <div class="container">
+        <h1>Bugs</h1>
+        <p>Welcome to Ember</p>
+      </div>
+    </div>
 
-{{outlet}}
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+            {{#link-to "bugs"}}Bugs{{/link-to}}
+            
+            {{#link-to "bugs.new"}}New Bug{{/link-to}}
+
+            {{outlet}}
+
+      </div>
+</div>      

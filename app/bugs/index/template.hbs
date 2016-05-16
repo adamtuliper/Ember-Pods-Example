@@ -1,0 +1,21 @@
+<br>
+
+I'm the bugs/index/template.hbs template<br>
+
+<br />
+
+<ul>
+{{#each model as |bug|}}
+
+{{#link-to 'bugs.details' bug}}
+<li>{{bug.title}} {{moment-format bug.createdAt}}</li>
+{{/link-to}}
+
+{{else}}
+
+No bugs found.
+{{/each}}
+
+</ul>
+<!--Note the route must exist or we'll see an error in the console'-->
+{{link-to 'Add Bug' 'bugs.new'}}

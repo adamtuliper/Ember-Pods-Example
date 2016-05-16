@@ -1,0 +1,27 @@
+<br>
+
+<div style='background-color:#d3d3d3;'>
+I'm the comments/index/template.hbs template<br>
+<br>
+
+Comment index <br>
+<div class='row'>
+<ul>
+
+{{#each model as |comment|}}
+
+<li>{{comment.description}}  <button {{action "delete" comment}}>Delete</button></li>
+{{else}}
+No comments found
+{{/each}}
+</ul>
+
+
+{{link-to 'New' 'comments.new' model}}
+
+<br />My { { outlet } } content goes here:<br />
+
+{{outlet}}
+</div>
+<br>
+</div>
